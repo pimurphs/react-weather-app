@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+//On this page: Convertion of units temperature C | F
+
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("celsius");
 
@@ -24,9 +26,9 @@ export default function WeatherTemperature(props) {
         <div className="row mb-3">
           <div className="col d-flex justify-content-center">
             <span className="unit">
-              ºC |{" "}
+              <button className="btn btn-primary">ºC</button>{" "}
               <a href="/" onClick={showFahrenheit}>
-                ºF
+                <button className="btn btn-primary">ºF</button>
               </a>
             </span>
           </div>
@@ -49,9 +51,9 @@ export default function WeatherTemperature(props) {
           <div className="col d-flex justify-content-center">
             <span className="unit">
               <a href="/" onClick={showCelsius}>
-                ºC
+                <button className="btn btn-primary">ºC</button>
               </a>{" "}
-              | ºF
+              <button className="btn btn-primary">ºF</button>
             </span>
           </div>
         </div>

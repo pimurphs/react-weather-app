@@ -3,6 +3,8 @@ import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
+//On this page: City on display/ Description
+
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
