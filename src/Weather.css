@@ -1,6 +1,13 @@
 :root {
   --primary-color: rgb(110, 5, 49);
 }
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+
 html {
   height: 100%;
 }
@@ -75,6 +82,7 @@ body {
   color: #ffffff;
   list-style: none;
   font-size: 13px;
+  text-align: right;
 }
 
 .WeatherTemperature .btn-primary {
